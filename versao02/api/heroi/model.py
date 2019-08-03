@@ -9,3 +9,9 @@ def incluir_heroi(nome):
     heroi = {"id": id, "nome": nome}
 
     herois.append(heroi)
+
+
+def remover_heroi(id):
+    encontrados = [a for a in herois if a['id'] == id]
+    if len(encontrados) > 0:
+        herois.remove(encontrados[0])
